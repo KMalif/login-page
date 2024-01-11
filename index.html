@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learnigo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+      <div class="side">
+          <div class="box-slogan">
+              <div class="inner-box-slogan">
+                  <h3>Digital platform <br>for distance <span><br>Learning.</span></h3>
+                  <p>You will never know everything.
+                      But you will know more.</p>
+              </div>
+          </div>
+      </div>
+      <div class="main-form">
+          <div class="form-wrap">
+              <div class="logo">
+                  <img src="./img/brand_logo.svg" alt="logo">
+                  <h3>Learnigo</h3>
+              </div>
+              <div class="slogan">
+                <h3>Hey, Hello<span class="wave">👋</span></h3>
+                <p>Enter your email and password to login.</p>
+              </div>
+              <div class="actual-input">
+                <div class="input-box">
+                  <label for="">Email</label>
+                  <input type="email">
+                </div>
+                <div class="input-box" style="margin-top: 24px;">
+                  <label for="">Password</label>
+                  <input type="password" id="password">
+                  <span><i class="far fa-eye" id="eye"></i></span>
+                </div>
+                <div class="btn-wrap" style="margin-top: 24px;">
+                  <button class="btn-login" id="login">Login</button>
+                  <button class="btn-signup">Sign Up</button>
+                </div>
+                <div class="login-method">
+                  <div class="login-with">
+                      <p>Or, login with</p>
+                  </div>
+                  <div class="other-method">
+                      <button>Facebook</button>
+                      <button>Linked in</button>
+                      <button>Google</button>
+                  </div>
+                </div>  
+              </div>
+          </div>
+      </div>
+
+      <script>
+        const password = document.getElementById('password');
+        const toggler = document.getElementById('eye');
+        showHidePassword = () => {
+          if (password.type == 'password') {
+            password.setAttribute('type', 'text');
+            toggler.classList.add('fa-eye-slash');
+          } else {
+            toggler.classList.remove('fa-eye-slash');
+            password.setAttribute('type', 'password');
+          }
+        };
+        toggler.addEventListener('click', showHidePassword);
+      </script>
+</body>
+</html>

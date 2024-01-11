@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+input {
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.side{
+    background: url('./img/bg-image.svg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+.box-slogan {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    box-shadow: 0 60px 40px -30px rgba(0, 0, 0, 0.27);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.inner-box-slogan{
+    margin: 88px 88px 88px 88px ;
+    max-width: 350px;
+    width: 100%;
+}
+
+.inner-box-slogan h3{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.inner-box-slogan span {
+    color: #3E334E;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+
+.inner-box-slogan p{
+    color: #3E334E;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.main-form {
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-wrap{
+    margin: 40px 64px 30px 64px;
+    width: 100%;
+}
+
+.logo{
+  display: flex;
+  flex-direction: row;
+}
+
+.logo img {
+  width: 40px;
+}
+
+.logo h3 {
+  color: #3E334E;
+  font-size: 32px;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 32px;
+  margin: auto 8px;
+}
+
+.slogan {
+  margin-top: 30px;
+}
+
+.slogan h3{
+  color: #3E334E;
+  font-size: 32px;
+  letter-spacing: -0.5px;
+  font-weight:bold;
+}
+
+.slogan p {
+  color: #3E334E;
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 16px;
+  margin-top: 8px;
+}
+
+.actual-input {
+  margin: 32px 0 ;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-box label {
+  color: #3E334E;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 16px
+}
+
+.input-box input {
+  max-height: 42px;
+  background: none;
+  border: none;
+  outline: 1px solid #AFA2C3;
+  margin-top: 8px;
+  padding: 16px;
+  border-radius: 8px;
+  color: #3E334E;
+  font-size: 16px;
+}
+
+.input-box span {
+  position: absolute;
+  margin-top: 34px;
+  right: 6%;
+  cursor: pointer;
+  color: #3E334E;
+}
+
+.btn-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.btn-login {
+  background: linear-gradient(to right, #FB6564, #A03CEA);
+  padding: 16px;
+  height: 48px;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  width: 150px;
+  font-weight:bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-signup {
+  background: none;
+  border-radius: 8dp;
+  height: 48px;
+  padding: 16px;
+  border: none;
+  outline: 1px solid #AFA2C3;
+  border-radius: 8px;
+  color: #3E334E;
+  width: 150px;
+  font-weight:bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-method {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
+.login-with {
+    text-align: center;
+    color: #3E334E;
+    font-size: 14px;
+}
+
+.other-method {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.other-method button {
+    border: none;
+    outline: 1px solid #AFA2C3;
+    color: #3E334E;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 14px;
+    word-wrap: break-word;
+    padding: 12px;
+    border-radius: 4px;
+    background: none;
+    width: 128px;
+    cursor: pointer;
+}
+
+
+
